@@ -292,6 +292,37 @@ header.top {
   background: var(--bg);
   border: 2px solid var(--a);
 }
+
+.dica {
+  position: absolute;
+  left: 50%;
+  bottom: 0.8rem;
+  transform: translateX(-50%);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--bg);
+  color: #fff;
+  border: 1px solid var(--a);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--a) 40%, transparent);
+  pointer-events: none; /* não atrapalha o arrasto */
+  z-index: 4;           /* acima do input (z-index: 3) */
+  animation: pulsar 1.8s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+}
+.dica.off {
+  opacity: 0;
+}
+@keyframes pulsar {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50%      { transform: translateX(-50%) scale(1.06); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dica { animation: none; }
+}
+
 .cmp:focus-within {
   outline: 3px solid var(--a);
 }
