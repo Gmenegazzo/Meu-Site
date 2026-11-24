@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Gabriel Menegazzo · Desenvolvimento front-end</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Sora:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top wrap">
+      <a class="logo" href="#"><i></i>Gabriel Menegazzo</a>
+      <a class="btn ghost" href="#contato">Falar comigo</a>
+    </header>
+
+    <main>
+      <div class="wrap hero">
+        <div>
+          <h1
+            id="h1"
+            data-text="Interfaces rápidas, vivas e prontas para o futuro."
+          >
+            <span class="cursor">&nbsp;</span>
+          </h1>
+          <p>
+            Sou desenvolvedor front-end. Crio sites e sistemas que carregam em
+            segundos, respondem a cada clique e funcionam em qualquer tela.
+          </p>
+          <div class="cta">
+            <a class="btn" href="#contato">Pedir orçamento</a>
+            <a class="btn ghost" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <div>
+          <div class="tilt" id="heroTilt">
+            <div class="browser">
+              <div class="chrome">
+                <i></i><i></i><i></i
+                ><span id="url">restaurantesabor.com.br</span>
+              </div>
+              <div
+                class="screens"
+                style="--p: 50%"
+                aria-label="Exemplos de sites"
+              >
+                <div class="pane before">
+                  <div class="bar">BEM-VINDO AO NOSSO SITE!!!</div>
+                  <b>Clique aqui</b><i>Contato · Sobre · Produtos · Fotos</i>
+                  <div class="blk"></div>
+                </div>
+                <span class="tag l">Antes</span
+                ><span class="tag r">Depois</span>
+                <div class="knob"></div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  aria-label="Comparar antes e depois do site"
+                />
+                <div class="scr s1 on" data-url="restaurantesabor.com.br">
+                  <div class="sn">
+                    <span>Sabor da Serra</span
+                    ><span>Cardápio&nbsp;&nbsp;Reservas</span>
+                  </div>
+                  <h4>Cozinha caseira, mesa cheia.</h4>
+                  <span class="pill">Reservar mesa</span>
+                  <div class="r3"><span></span><span></span><span></span></div>
+                </div>
+                <div class="scr s2" data-url="lojaurbana.com.br">
+                  <div class="sn">
+                    <span>Loja Urbana</span
+                    ><span>Novidades&nbsp;&nbsp;Carrinho (2)</span>
+                  </div>
+                  <div class="r4">
+                    <div><span></span><b></b></div>
+                    <div><span></span><b></b></div>
+                    <div><span></span><b></b></div>
+                    <div><span></span><b></b></div>
+                  </div>
+                </div>
+                <div class="scr s3" data-url="clinicavida.com.br">
+                  <div class="sn">
+                    <span>Clínica Vida</span
+                    ><span>Especialidades&nbsp;&nbsp;Agendar</span>
+                  </div>
+                  <h4>Cuidado de verdade, sem fila.</h4>
+                  <span class="pill t">Agendar consulta</span>
+                  <div class="svc3">
+                    <span>Clínico geral</span><span>Pediatria</span
+                    ><span>Exames</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thumbs">
+              <button type="button" aria-pressed="true">Restaurante</button
+              ><button type="button" aria-pressed="false">Loja online</button
+              ><button type="button" aria-pressed="false">Clínica</button>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; margin: 0.9rem 0 0">
+            Arraste para comparar um site antigo com o novo. Troque o exemplo
+            nos botões.
+          </p>
+        </div>
+      </div>
+
+      <div class="ticker" aria-label="Tecnologias que uso">
+        <div id="tk"></div>
+      </div>
+
+      <section id="servicos">
+        <div class="wrap">
+          <h2 class="t">O que eu faço</h2>
+          <div class="svc">
+            <div class="card tilt">
+              <h3>Sites e landing pages</h3>
+              <p>
+                Páginas que apresentam seu negócio com clareza e levam o
+                visitante a chamar você.
+              </p>
+            </div>
+            <div class="card tilt">
+              <h3>Interfaces para sistemas</h3>
+              <p>
+                Painéis, formulários e telas em React que equipes usam todo dia
+                sem tropeçar.
+              </p>
+            </div>
+            <div class="card tilt">
+              <h3>Melhoria do que já existe</h3>
+              <p>
+                Deixo seu site atual mais rápido, responsivo e acessível, sem
+                refazer tudo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos">
+        <div class="wrap">
+          <h2 class="t">Exemplos de sites</h2>
+          <p class="section-desc">
+            Alguns projetos que mostram o tipo de resultado que você pode
+            esperar.
+          </p>
+
+          <div class="projects">
+            <a
+              class="project-link"
+              href="sabor-da-vila/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-pizza">
+                  <div class="sn">
+                    <span>Sabor da Vila</span>
+                    <span>Cardápio · Delivery</span>
+                  </div>
+                  <h4>A melhor pizza artesanal da região.</h4>
+                  <span class="pill pizza">Fazer Pedido</span>
+                </div>
+                <div class="project-info">
+                  <h3>Pizzaria</h3>
+                  <p>
+                    Landing page completa com cardápio, galeria, depoimentos e
+                    pedido via WhatsApp.
+                  </p>
+                  <div class="tags">
+                    <span>Landing page</span>
+                    <span>Delivery</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="project-link"
+              href="bella-moda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-moda">
+                  <div class="sn">
+                    <span>Bella Moda</span>
+                    <span>Coleção · Boutique</span>
+                  </div>
+                  <h4>Elegância e estilo em cada peça.</h4>
+                  <span class="pill moda">Ver Coleção</span>
+                </div>
+                <div class="project-info">
+                  <h3>Boutique de moda</h3>
+                  <p>
+                    Site completo com galeria, categorias, depoimentos e contato
+                    para loja de roupas femininas.
+                  </p>
+                  <div class="tags">
+                    <span>Moda</span>
+                    <span>Landing page</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="project-link"
+              href="dra-camila-nutri/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-nutri">
+                  <div class="sn">
+                    <span>Dra. Camila Nutri</span>
+                    <span>Serviços · Agendar</span>
+                  </div>
+                  <h4>Transforme sua relação com a comida.</h4>
+                  <span class="pill nutri">Agendar Consulta</span>
+                </div>
+                <div class="project-info">
+                  <h3>Nutricionista</h3>
+                  <p>
+                    Landing page completa com serviços, resultados, depoimentos
+                    e agendamento via WhatsApp.
+                  </p>
+                  <div class="tags">
+                    <span>Saúde</span>
+                    <span>Landing page</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="project-link"
+              href="prime-imoveis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-imovel">
+                  <div class="sn">
+                    <span>Prime Imóveis</span>
+                    <span>Compra · Venda · Aluguel</span>
+                  </div>
+                  <h4>Encontre o imóvel dos seus sonhos.</h4>
+                  <span class="pill imovel">Ver Imóveis</span>
+                </div>
+                <div class="project-info">
+                  <h3>Imobiliária</h3>
+                  <p>
+                    Site completo com portfólio de imóveis, serviços,
+                    depoimentos e contato para imobiliária de alto padrão.
+                  </p>
+                  <div class="tags">
+                    <span>Imóveis</span>
+                    <span>Landing page</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="project-link"
+              href="./academia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-academia">
+                  <div class="sn">
+                    <span>Elite Fitness</span>
+                    <span>Modalidades · Planos · Horarios</span>
+                  </div>
+                  <h4>Transforme seu corpo e sua vida na Elite Fitness.</h4>
+                  <span class="pill academia">Ver Planos</span>
+                </div>
+                <div class="project-info">
+                  <h3>Academia</h3>
+                  <p>
+                    Elite Fitness A academia mais completa da região com
+                    equipamentos de última geração, personal trainers
+                    certificados e ambiente motivador. Seu resultado é nossa
+                    prioridade!.
+                  </p>
+                  <div class="tags">
+                    <span>Academia</span>
+                    <span>Landing page</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+
+            <a
+              class="project-link"
+              href="./advocacia/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <article class="project-card tilt">
+                <div class="project-preview s-advocacia">
+                  <div class="sn">
+                    <span>Menegazzo & Associados</span>
+                    <span>Assessoria Jurídica · Serviços · Horarios</span>
+                  </div>
+                  <h4>Excelência Jurídica e Compromisso com Seus Direitos.</h4>
+                  <span class="pill advocacia">Consultoria</span>
+                </div>
+                <div class="project-info">
+                  <h3>Advocacia</h3>
+                  <p>
+                    Há mais de 20 anos oferecendo soluções jurídicas
+                    personalizadas com ética, profissionalismo e resultados
+                    comprovados..
+                  </p>
+                  <div class="tags">
+                    <span>Advocacia</span>
+                    <span>Landing page</span>
+                    <span>Mobile first</span>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap">
+          <h2 class="t">Como funciona</h2>
+          <ol class="steps">
+            <li tabindex="0">
+              <h3>Conversa</h3>
+              <p>Entendo seu objetivo, seu público e o prazo.</p>
+            </li>
+            <li tabindex="0">
+              <h3>Proposta</h3>
+              <p>Você recebe escopo, valor e data de entrega por escrito.</p>
+            </li>
+            <li tabindex="0">
+              <h3>Desenvolvimento</h3>
+              <p>Mostro o andamento a cada etapa para você opinar cedo.</p>
+            </li>
+            <li tabindex="0">
+              <h3>Entrega</h3>
+              <p>Site publicado, testado no celular e com suporte inicial.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contato">
+        <div class="wrap contact">
+          <h2>Vamos tirar seu projeto do papel?</h2>
+          <p>
+            Conte em poucas linhas o que você precisa. Respondo em até um dia
+            útil.
+          </p>
+          <div class="cta">
+            <a class="btn" id="zap2" href="https://wa.me/5549999310791"
+              >Chamar no WhatsApp</a
+            >
+            <a
+              class="btn ghost"
+              href="https://mail.google.com/mail/?view=cm&to=gabrielmenegazzo12@gmail.com&su=Or%C3%A7amento%20de%20site"
+              target="_blank"
+              rel="noopener"
+              >Chamar no Email</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © 2026 Gabriel Menegazzo. Desenvolvimento front-end.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="./devcity-tech-background-motion.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
